@@ -1,42 +1,60 @@
-Healthcare Data Analysis Dashboard
-Project Overview
-This project uses Power BI to explore and analyze healthcare admission data. The dashboard is designed to help users understand patient admissions, hospital activity, medical conditions, billing, and other healthcare trends through data visualization.
-Objectives
-Analyze healthcare admission records.
-Explore patient demographics, including age and gender.
-Examine admissions by medical condition, hospital, doctor, and admission type.
-Review billing amounts and insurance-provider information.
-Present healthcare data in an interactive Power BI report.
-Tools Used
-Microsoft Power BI Desktop — data cleaning, data modeling, and visualization
-Power Query — data transformation
-Power BI data model — dimension and fact tables
-Data Model
-The project organizes the data into the following tables:
-`DimPatient` — patient details such as name, age, age group, gender, and blood type
-`DimDoctor` — doctor information
-`DimHospital` — hospital information
-`DimDate` — date attributes such as year, month, month number, and quarter
-`FactAdmission` — admission records and related measures/details
-`healthcare_dataset2` — source/staging query used to prepare the model
-Key Analysis Areas
-Depending on the visuals included in the report, the dashboard can analyze:
-Total admissions
-Admissions by month and year
-Patient age-group and gender distribution
-Admissions by medical condition and admission type
-Hospital and doctor activity
-Billing amounts and insurance providers
-Medication and test-result patterns
-How to Open the Project
-Download or clone this repository.
-Open `PowerBI-5.pbix` in Power BI Desktop.
-If Power BI requests access to the source data, update the data-source path or credentials as required.
-Select Refresh if the source data is available.
-Explore the report pages and visuals.
-Repository Contents
-`PowerBI-5.pbix` — Power BI report file
-`README.md` — project documentation
-> If the original source dataset is not included in this repository, users will need their own copy of it to refresh the report.
-Notes
-This is a data-analysis and visualization project. Findings depend on the contents and quality of the source healthcare dataset. The project should not be used to make clinical decisions.
+# Healthcare Data Analysis Dashboard
+
+## Project Overview
+
+This project uses Microsoft Power BI to analyze healthcare admission data and present insights through interactive dashboards and visualizations.
+
+## Objectives
+
+* Analyze healthcare admission records.
+* Study patient demographics such as age and gender.
+* Analyze admissions by hospital, doctor, medical condition, and admission type.
+* Explore billing amounts and insurance providers.
+* Identify trends in healthcare admissions.
+
+## Tools Used
+
+* Microsoft Power BI Desktop
+* Power Query
+* Data Modeling
+* Data Visualization
+
+## Data Model
+
+The project contains the following tables:
+
+* **DimPatient:** Patient details, including name, age, gender, and blood type.
+* **DimDoctor:** Doctor information.
+* **DimHospital:** Hospital information.
+* **DimDate:** Date details, including year, month, and quarter.
+* **FactAdmission:** Healthcare admission records and related details.
+* **healthcare_dataset2:** Source dataset used for data transformation.
+
+## Key Analysis
+
+* Total healthcare admissions
+* Monthly admission trends
+* Patient age and gender distribution
+* Admissions by medical condition
+* Hospital and doctor analysis
+* Billing amount analysis
+* Insurance provider analysis
+* Admission type and test result analysis
+
+## How to Open the Project
+
+1. Download the `PowerBI-5.pbix` file from this repository.
+2. Install and open Microsoft Power BI Desktop.
+3. Open the downloaded `.pbix` file.
+4. Refresh the data if the original source dataset is available.
+5. Explore the dashboard and visualizations.
+
+## Project File
+
+* `PowerBI-5.pbix` — Power BI dashboard project.
+
+## Conclusion
+
+This project demonstrates how Power BI can be used to transform healthcare data into meaningful insights through data cleaning, data modeling, and interactive visualizations.
+
+
